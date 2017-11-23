@@ -383,7 +383,7 @@ public class ClientJson {
 	        try {
 	             
 	            // This block configure the logger with handler and formatter
-	            fh = new FileHandler("client-server-json.log");
+	            fh = new FileHandler("client-server-json.log", false);
 	            logger.addHandler(fh);
 	            //logger.setLevel(Level.ALL);
 	            SimpleFormatter formatter = new SimpleFormatter();
