@@ -371,7 +371,7 @@ public class ClientXml {
 	        try {
 	             
 	            // This block configure the logger with handler and formatter
-	            fh = new FileHandler("client-server-xml.log");
+	            fh = new FileHandler("client-server-xml.log", false);
 	            logger.addHandler(fh);
 	            //logger.setLevel(Level.ALL);
 	            SimpleFormatter formatter = new SimpleFormatter();
