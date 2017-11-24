@@ -1,13 +1,14 @@
-Nov 23, 2017 11:54:13 PM introsde.assign.ClientXml xmlToLog
+Nov 24, 2017 3:08:47 PM introsde.assign.ClientXml xmlToLog
 INFO: 
 Request #1:
 Header: 
 GET /person/ Accept: APPLICATION/XML Content-Type: APPLICATION/XML
 => Result: OK
 => HTTP Status: 200 OK
-The number of people in the database is: 5
+The number of people in the database is: 9
 The id of the first person: 651
-The id of the last person: 660
+The id of the last person: 710
+Body: 
 <?xml version="1.0" encoding="UTF-16"?>
 <people>
     <person>
@@ -120,6 +121,110 @@ The id of the last person: 660
             </type>
         </preferences>
     </person>
+    <person>
+        <birthdate>0000-01-10</birthdate>
+        <firstname>Gennaro</firstname>
+        <idPerson>701</idPerson>
+        <lastname>Legendary Super Sayan</lastname>
+        <preferences>
+            <description>killing Kakarrot as soon as possible</description>
+            <idActivity>652</idActivity>
+            <name>killing Kakarrot</name>
+            <place>Universe 18</place>
+            <startdate>0000-00-00T00:00:00.0</startdate>
+            <type>
+                <typeOf>Social</typeOf>
+            </type>
+        </preferences>
+        <preferences>
+            <description>Drinking tea with friends</description>
+            <idActivity>653</idActivity>
+            <name>Afternoon_tea</name>
+            <place>Bar Centrale</place>
+            <startdate>2017-11-30T17:50:00.0</startdate>
+            <type>
+                <typeOf>Cultural</typeOf>
+            </type>
+        </preferences>
+    </person>
+    <person>
+        <birthdate>0000-01-10</birthdate>
+        <firstname>Gennaro</firstname>
+        <idPerson>704</idPerson>
+        <lastname>Legendary Super Sayan</lastname>
+        <preferences>
+            <description>killing Kakarrot as soon as possible</description>
+            <idActivity>652</idActivity>
+            <name>killing Kakarrot</name>
+            <place>Universe 18</place>
+            <startdate>0000-00-00T00:00:00.0</startdate>
+            <type>
+                <typeOf>Social</typeOf>
+            </type>
+        </preferences>
+        <preferences>
+            <description>Drinking tea with friends</description>
+            <idActivity>653</idActivity>
+            <name>Afternoon_tea</name>
+            <place>Bar Centrale</place>
+            <startdate>2017-11-30T17:50:00.0</startdate>
+            <type>
+                <typeOf>Cultural</typeOf>
+            </type>
+        </preferences>
+    </person>
+    <person>
+        <birthdate>0000-01-10</birthdate>
+        <firstname>Gennaro</firstname>
+        <idPerson>707</idPerson>
+        <lastname>Legendary Super Sayan</lastname>
+        <preferences>
+            <description>killing Kakarrot as soon as possible</description>
+            <idActivity>652</idActivity>
+            <name>killing Kakarrot</name>
+            <place>Universe 18</place>
+            <startdate>0000-00-00T00:00:00.0</startdate>
+            <type>
+                <typeOf>Social</typeOf>
+            </type>
+        </preferences>
+        <preferences>
+            <description>Drinking tea with friends</description>
+            <idActivity>653</idActivity>
+            <name>Afternoon_tea</name>
+            <place>Bar Centrale</place>
+            <startdate>2017-11-30T17:50:00.0</startdate>
+            <type>
+                <typeOf>Cultural</typeOf>
+            </type>
+        </preferences>
+    </person>
+    <person>
+        <birthdate>0000-01-10</birthdate>
+        <firstname>Gennaro</firstname>
+        <idPerson>710</idPerson>
+        <lastname>Legendary Super Sayan</lastname>
+        <preferences>
+            <description>killing Kakarrot as soon as possible</description>
+            <idActivity>652</idActivity>
+            <name>killing Kakarrot</name>
+            <place>Universe 18</place>
+            <startdate>0000-00-00T00:00:00.0</startdate>
+            <type>
+                <typeOf>Social</typeOf>
+            </type>
+        </preferences>
+        <preferences>
+            <description>Drinking tea with friends</description>
+            <idActivity>653</idActivity>
+            <name>Afternoon_tea</name>
+            <place>Bar Centrale</place>
+            <startdate>2017-11-30T17:50:00.0</startdate>
+            <type>
+                <typeOf>Cultural</typeOf>
+            </type>
+        </preferences>
+    </person>
 </people>
 
 
@@ -128,6 +233,7 @@ Header:
 GET /person/651 Accept: APPLICATION/XML
 => Result: OK
 => HTTP Status: 200 OK
+Body: 
 <?xml version="1.0" encoding="UTF-16"?>
 <person>
     <birthdate>0000-01-10</birthdate>
@@ -162,6 +268,7 @@ Header:
 PUT /person/651 Accept: APPLICATION/XML Content-Type: APPLICATION/XML
 => Result: ERROR
 => HTTP Status: 201 Created
+Body: 
 <?xml version="1.0" encoding="UTF-16"?>
 <person>
     <birthdate>0000-01-10</birthdate>
@@ -196,15 +303,16 @@ Header:
 POST /person/ Accept: APPLICATION/XML Content-Type: APPLICATION/XML
 => Result: OK
 => HTTP Status: 200 OK
+Body: 
 <?xml version="1.0" encoding="UTF-16"?>
 <person>
     <birthdate>2017-11-11</birthdate>
     <firstname>Sherlock</firstname>
-    <idPerson>702</idPerson>
+    <idPerson>714</idPerson>
     <lastname>Holmes</lastname>
     <preferences>
         <description>Going to a restaurant or a bar with friends.</description>
-        <idActivity>703</idActivity>
+        <idActivity>715</idActivity>
         <name>Going out</name>
         <place>London</place>
         <startdate>2017-11-11T00:00:00+01:00</startdate>
@@ -217,15 +325,17 @@ POST /person/ Accept: APPLICATION/XML Content-Type: APPLICATION/XML
 
 Request #5:
 Header: 
-DELETE /person/702 Accept: APPLICATION/XML
+DELETE /person/714 Accept: APPLICATION/XML
 => Result: ERROR
-=> HTTP Status: 500 Internal Server Error
+=> HTTP Status: 204 No Content
+Body: 
 
 Request #6:
 Header: 
 GET /activity_type/ Accept: APPLICATION/XML Content-Type: APPLICATION/XML
-=> Result: ERROR
+=> Result: OK
 => HTTP Status: 200 OK
+Body: 
 <?xml version="1.0" encoding="UTF-16"?>
 <activityTypes>
     <activity_type>Cultural</activity_type>
@@ -238,6 +348,7 @@ Header:
 GET /person/651/Cultural Accept: APPLICATION/XML
 => Result: OK
 => HTTP Status: 200 OK
+Body: 
 <?xml version="1.0" encoding="UTF-16"?>
 <activities>
     <activity>
@@ -258,6 +369,28 @@ Header:
 GET /person/651/Cultural Accept: APPLICATION/XML
 => Result: OK
 => HTTP Status: 200 OK
+Body: 
+<?xml version="1.0" encoding="UTF-16"?>
+<activities>
+    <activity>
+        <description>Drinking tea with friends</description>
+        <idActivity>653</idActivity>
+        <name>Afternoon_tea</name>
+        <place>Bar Centrale</place>
+        <startdate>2017-11-30T17:50:00.0</startdate>
+        <type>
+            <typeOf>Cultural</typeOf>
+        </type>
+    </activity>
+</activities>
+
+
+Request #7a:
+Header: 
+GET /person/651/Cultural Accept: APPLICATION/XML
+=> Result: OK
+=> HTTP Status: 200 OK
+Body: 
 <?xml version="1.0" encoding="UTF-16"?>
 <activities>
     <activity>
@@ -278,14 +411,15 @@ Header:
 GET /person/651/Cultural Accept: APPLICATION/XML
 => Result: OK
 => HTTP Status: 200 OK
+Body: 
 <?xml version="1.0" encoding="UTF-16"?>
 <activities>
     <activity>
-        <description>Sleeping in the bed</description>
-        <idActivity>663</idActivity>
-        <name>Slepping</name>
-        <place>Own bed</place>
-        <startdate>2017-12-07T21:50:00.0</startdate>
+        <description>Drinking tea with friends</description>
+        <idActivity>653</idActivity>
+        <name>Afternoon_tea</name>
+        <place>Bar Centrale</place>
+        <startdate>2017-11-30T17:50:00.0</startdate>
         <type>
             <typeOf>Cultural</typeOf>
         </type>
@@ -298,14 +432,36 @@ Header:
 GET /person/651/Cultural Accept: APPLICATION/XML
 => Result: OK
 => HTTP Status: 200 OK
+Body: 
 <?xml version="1.0" encoding="UTF-16"?>
 <activities>
     <activity>
-        <description>Sleeping in the bed</description>
-        <idActivity>663</idActivity>
-        <name>Slepping</name>
-        <place>Own bed</place>
-        <startdate>2017-12-07T21:50:00.0</startdate>
+        <description>Drinking tea with friends</description>
+        <idActivity>653</idActivity>
+        <name>Afternoon_tea</name>
+        <place>Bar Centrale</place>
+        <startdate>2017-11-30T17:50:00.0</startdate>
+        <type>
+            <typeOf>Cultural</typeOf>
+        </type>
+    </activity>
+</activities>
+
+
+Request #7b:
+Header: 
+GET /person/651/Cultural Accept: APPLICATION/XML
+=> Result: OK
+=> HTTP Status: 200 OK
+Body: 
+<?xml version="1.0" encoding="UTF-16"?>
+<activities>
+    <activity>
+        <description>Drinking tea with friends</description>
+        <idActivity>653</idActivity>
+        <name>Afternoon_tea</name>
+        <place>Bar Centrale</place>
+        <startdate>2017-11-30T17:50:00.0</startdate>
         <type>
             <typeOf>Cultural</typeOf>
         </type>
@@ -339,6 +495,28 @@ Body:
 
 Request #10:
 Header: 
-PUT /person/651/Social/652 Accept: APPLICATION/JSON Content-Type: APPLICATION/JSON
+PUT /person/651/Cultural/653 Accept: APPLICATION/XML Content-Type: APPLICATION/XML
+=> Result: OK
+=> HTTP Status: 204 No Content
+Body: 
+
+Request #11:
+Header: 
+GET /person/651/Social?before=2017-12-28T08:50:00.0&after=2000-11-11T00:00:00.0 Accept: APPLICATION/JSON
 => Result: OK
 => HTTP Status: 200 OK
+Body: 
+<?xml version="1.0" encoding="UTF-16"?>
+<activities>
+    <activity>
+        <description>Drinking tea with friends</description>
+        <idActivity>653</idActivity>
+        <name>Afternoon_tea</name>
+        <place>Bar Centrale</place>
+        <startdate>2017-11-30T17:50:00.0</startdate>
+        <type>
+            <typeOf>Social</typeOf>
+        </type>
+    </activity>
+</activities>
+
