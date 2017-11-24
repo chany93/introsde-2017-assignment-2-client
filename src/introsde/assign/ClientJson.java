@@ -304,10 +304,17 @@ public class ClientJson {
     
  // Step 3.10. EXTRA
    
+     String newType = "";
+    if (type.equals("Social")) {
+    		newType = "Sport";
+    }else {
+    		newType = "Social";   	
+    }
+    	
     Object jsonPut1 = 
     		
     		"	{\"typeOf\": \n" + 
-    		"			\"Sport\"\n" + 
+    		"			\"" + newType +  "\"\n" + 
     		"		}";		
 
     Response respPut = service.path("person").path(String.valueOf(first_person_id)).path(type).path(String.valueOf(idActivity)).request().accept(MediaType.APPLICATION_JSON).header("Content-type","application/json").put(Entity.json(jsonPut1));
