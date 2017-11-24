@@ -299,9 +299,16 @@ public class ClientXml {
 
     // Step 3.10. EXTRA
     
+    String newType = "";
+    if (type.equals("Social")) {
+    		newType = "Sport";
+    }else {
+    		newType = "Social";   	
+    }
+    
     Object xmlTypePut = 
     		"<activity_type>"
-    		+ "<typeOf>Sport</typeOf>"
+    		+ "<typeOf>" + newType + "</typeOf>"
     		+ "</activity_type>";
  
     Response respPut = service.path("person").path(String.valueOf(first_person_id)).path(type).path(String.valueOf(idActivity))
