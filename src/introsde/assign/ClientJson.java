@@ -306,7 +306,7 @@ public class ClientJson {
    
      String newType = "";
     if (type.equals("Social")) {
-    		newType = "Sport";
+    		newType = "Cultural";
     }else {
     		newType = "Social";   	
     }
@@ -335,9 +335,15 @@ public class ClientJson {
     
     		//+ formatJsonString(responsePut) + "\n";
  
+    if (newType.equals("Social")) {
+	type = "Social";
+    } else {
+	type = "Cultural";
+    }
+		
  // Step 3.11. EXTRA
 
-	resp = service.path("person").path(String.valueOf(first_person_id)).path("Cultural").queryParam("before", "2017-12-28T08:50:00.0").queryParam("after", "2000-11-11T00:00:00.0").request().accept(MediaType.APPLICATION_JSON).get();
+	resp = service.path("person").path(String.valueOf(first_person_id)).path(type).queryParam("before", "2017-12-28T08:50:00.0").queryParam("after", "2000-11-11T00:00:00.0").request().accept(MediaType.APPLICATION_JSON).get();
 	response = resp.readEntity(String.class);
 	System.out.println("Response "+ formatJsonString(response));
 	JSONArray array11 = new JSONArray(response);
