@@ -73,6 +73,7 @@ public class ClientXml {
     		+ "The number of people in the database is: " + count + "\n"
     	    + "The id of the first person: " + first_person_id + "\n"
     	    + "The id of the last person: " + last_person_id + "\n"
+    	    + "Body: \n"
     		+ prettyFormat(response, 2) + "\n";
     
     		
@@ -98,6 +99,7 @@ public class ClientXml {
     		+ "GET /person/" + first_person_id + " Accept: APPLICATION/XML" + "\n"
     		+ "=> Result: " + result +  "\n"
     		+ "=> HTTP Status: " + resp.getStatus() + " " + resp.getStatusInfo() + "\n"
+    		+ "Body: \n"
     		+ prettyFormat(response, 2) + "\n";
   	
 
@@ -127,6 +129,7 @@ public class ClientXml {
     		+ "PUT /person/" + first_person_id + " Accept: APPLICATION/XML Content-Type: APPLICATION/XML" + "\n"
     		+ "=> Result: " + result +  "\n"
     		+ "=> HTTP Status: " + resp.getStatus() + " " + resp.getStatusInfo() + "\n"
+    		+ "Body: \n"
     		+ prettyFormat(response, 2) + "\n";
     		
     // Step 3.4.
@@ -163,16 +166,17 @@ public class ClientXml {
     		+ "POST /person/ Accept: APPLICATION/XML Content-Type: APPLICATION/XML" + "\n"
     		+ "=> Result: " + result +  "\n"
     		+ "=> HTTP Status: " + resp.getStatus() + " " + resp.getStatusInfo() + "\n"
+    		+ "Body: \n"
     		+ prettyFormat(response, 2) + "\n";
   	
  
    
     //3.5.
     
-    resp = service.path("person").path(String.valueOf(newPersonId)).request().accept(MediaType.APPLICATION_XML).delete();
+    Response del = service.path("person").path(String.valueOf(newPersonId)).request().accept(MediaType.APPLICATION_XML).delete();
     resp = service.path("person").path(String.valueOf(newPersonId)).request().accept(MediaType.APPLICATION_XML).get();
   
-    if (resp.getStatus()==404) {
+    if (del.getStatus()==404) {
     	result = "OK";
     } else {
     	result ="ERROR";
@@ -182,7 +186,8 @@ public class ClientXml {
     		+ "Header: " + "\n"
     		+ "DELETE /person/" + newPersonId + " Accept: APPLICATION/XML" + "\n"
     		+ "=> Result: " + result +  "\n"
-    		+ "=> HTTP Status: " + resp.getStatus() + " " + resp.getStatusInfo() + "\n";
+    		+ "=> HTTP Status: " + del.getStatus() + " " + del.getStatusInfo() + "\n"
+    		+ "Body: \n";
     		
   
     
@@ -208,6 +213,7 @@ public class ClientXml {
     		+ "GET /activity_type/ Accept: APPLICATION/XML Content-Type: APPLICATION/XML" + "\n"
     		+ "=> Result: " + result +  "\n"
     		+ "=> HTTP Status: " + resp.getStatus() + " " + resp.getStatusInfo() + "\n"
+    		+ "Body: \n"
     		+ prettyFormat(response, 2) + "\n";
     
     // Step 3.7.
@@ -235,6 +241,7 @@ public class ClientXml {
 	        		+ "GET /person/" + first_person_id + "/" +  typesList.get(i) + " Accept: APPLICATION/XML" + "\n"
 	        		+ "=> Result: " + result +  "\n"
 	        		+ "=> HTTP Status: " + resp.getStatus() + " " + resp.getStatusInfo() + "\n"
+	        		+ "Body: \n"
 	        		+ prettyFormat(response, 2) + "\n";
 	    
     }
@@ -255,6 +262,7 @@ public class ClientXml {
 	        		+ "GET /person/" + first_person_id + "/" +  typesList.get(i) + " Accept: APPLICATION/XML" + "\n"
 	        		+ "=> Result: " + result +  "\n"
 	        		+ "=> HTTP Status: " + resp.getStatus() + " " + resp.getStatusInfo() + "\n"
+	        		+ "Body: \n"
 	        		+ prettyFormat(response, 2) + "\n";
 	}
     if (countOK>0) {
@@ -287,48 +295,39 @@ public class ClientXml {
     		+ "Body: "  + "\n"
     		+ prettyFormat(response, 2) + "\n";
 
-    
-    
+    	
+
     // Step 3.10. EXTRA
+    
     Object xmlTypePut = 
     		"<activity_type>"
     		+ "<typeOf>Sport</typeOf>"
     		+ "</activity_type>";
-    
-    resp = service.path("person").path(String.valueOf(first_person_id)).path(type).path(String.valueOf(idActivity)).request().accept(MediaType.APPLICATION_XML).get();
-    response = resp.readEntity(String.class);
-   /* Document doc10a = loadXMLFromString(response);
-    String origType = doc10a.getElementsByTagName("activity").item(0).getChildNodes().item(5).getChildNodes().item(0).getTextContent();
-
-
-    Response respPut = service.path("person").path(String.valueOf(first_person_id)).path(type).path(String.valueOf(idActivity)).request().accept(MediaType.APPLICATION_XML).header("Content-type","application/xml").put(Entity.xml(xmlTypePut));
+ 
+    Response respPut = service.path("person").path(String.valueOf(first_person_id)).path(type).path(String.valueOf(idActivity))
+    		.request().accept(MediaType.APPLICATION_XML).header("Content-type","application/xml").put(Entity.xml(xmlTypePut));
     String responsePut = respPut.readEntity(String.class);
 
-    resp = service.path("person").path(String.valueOf(first_person_id)).path("Social").path(String.valueOf(idActivity)).request().accept(MediaType.APPLICATION_XML).get();
-    response = resp.readEntity(String.class);
-    Document doc10b = loadXMLFromString(response);
-    String newType = doc10b.getElementsByTagName("activity").item(0).getChildNodes().item(5).getChildNodes().item(0).getTextContent();       
+
     
-    System.out.println("newType: "+ newType);
-    System.out.println("origType: "+ origType);
+    if (respPut.getStatus() == 200 || respPut.getStatus() == 204) {
+		result = "OK";
+    	}else {
+		result = "ERROR";
+    	}
     
-    if (!newType.equals(origType)) {
-    		result = "OK";
-    }else {
-    		result = "ERROR";
-    }
-    */
     out = out + "\nRequest #10:" + "\n"
     		+ "Header: " + "\n"
-    		+ "PUT /person/" + first_person_id + "/Social" + "/" + "652" +" Accept: APPLICATION/JSON Content-Type: APPLICATION/JSON" + "\n"
-    		+ "=> Result: " + "OK" +  "\n"
-    		+ "=> HTTP Status: 200 OK";
+    		+ "PUT /person/" + first_person_id + "/" + type +  "/"	 + idActivity + " Accept: APPLICATION/XML Content-Type: APPLICATION/XML" + "\n"
+    		+ "=> Result: " + result +  "\n"
+    		+ "=> HTTP Status: " + respPut.getStatus() + " " + respPut.getStatusInfo() + "\n"
+    		+ "Body: \n";
 
 
- /*
+ 
     // Step 3.11. EXTRA
 
-	resp = service.path("person").path(String.valueOf(first_person_id)).path("Cultural").queryParam("before", "2017-12-28T08:50:00").queryParam("after", "2000-11-11T00:00:00").request().accept(MediaType.APPLICATION_XML).get();
+	resp = service.path("person").path(String.valueOf(first_person_id)).path("Cultural").queryParam("before", "2017-12-28T08:50:00.0").queryParam("after", "2000-11-11T00:00:00.0").request().accept(MediaType.APPLICATION_XML).get();
 	response = resp.readEntity(String.class);
     Document doc11 = loadXMLFromString(response);
 
@@ -341,13 +340,14 @@ public class ClientXml {
     
     out = out + "\nRequest #11:" + "\n"
     		+ "Header: " + "\n"
-    		+ "GET /person/" + first_person_id + "/" +  type + "?before=2017-12-28T08:50:00&after=2000-11-11T00:00:00" + " Accept: APPLICATION/JSON" + "\n"
+    		+ "GET /person/" + first_person_id + "/" +  type + "?before=2017-12-28T08:50:00.0&after=2000-11-11T00:00:00.0" + " Accept: APPLICATION/JSON" + "\n"
     		+ "=> Result: " + result +  "\n" 
     		+ "=> HTTP Status: " + resp.getStatus() + " " + resp.getStatusInfo() + "\n"
+    		+ "Body: \n"
     		+ prettyFormat(response, 2) + "\n";
-*/
-   // System.out.println(out);
-    xmlToLog(out);
+
+   	 System.out.println(out);
+   // xmlToLog(out);
 	
 	
 }
@@ -387,8 +387,6 @@ public class ClientXml {
 	        }
 	        
 	    }
-	 
-	 
 	 
 	 
 	 public static String prettyFormat(String xml, int indent) {
