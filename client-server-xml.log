@@ -1,13 +1,13 @@
-Nov 23, 2017 5:32:45 PM introsde.assign.ClientXml xmlToLog
+Nov 23, 2017 11:54:13 PM introsde.assign.ClientXml xmlToLog
 INFO: 
 Request #1:
 Header: 
 GET /person/ Accept: APPLICATION/XML Content-Type: APPLICATION/XML
 => Result: OK
 => HTTP Status: 200 OK
-The number of people in the database is: 27
+The number of people in the database is: 5
 The id of the first person: 651
-The id of the last person: 764
+The id of the last person: 660
 <?xml version="1.0" encoding="UTF-16"?>
 <people>
     <person>
@@ -120,578 +120,6 @@ The id of the last person: 764
             </type>
         </preferences>
     </person>
-    <person>
-        <birthdate>0000-01-10</birthdate>
-        <firstname>Gennaro</firstname>
-        <idPerson>701</idPerson>
-        <lastname>Legendary Super Sayan</lastname>
-        <preferences>
-            <description>killing Kakarrot as soon as possible</description>
-            <idActivity>652</idActivity>
-            <name>killing Kakarrot</name>
-            <place>Universe 18</place>
-            <startdate>0000-00-00T00:00:00.0</startdate>
-            <type>
-                <typeOf>Social</typeOf>
-            </type>
-        </preferences>
-        <preferences>
-            <description>Drinking tea with friends</description>
-            <idActivity>653</idActivity>
-            <name>Afternoon_tea</name>
-            <place>Bar Centrale</place>
-            <startdate>2017-11-30T17:50:00.0</startdate>
-            <type>
-                <typeOf>Cultural</typeOf>
-            </type>
-        </preferences>
-    </person>
-    <person>
-        <birthdate>0000-01-10</birthdate>
-        <firstname>Gennaro</firstname>
-        <idPerson>704</idPerson>
-        <lastname>Legendary Super Sayan</lastname>
-        <preferences>
-            <description>killing Kakarrot as soon as possible</description>
-            <idActivity>652</idActivity>
-            <name>killing Kakarrot</name>
-            <place>Universe 18</place>
-            <startdate>0000-00-00T00:00:00.0</startdate>
-            <type>
-                <typeOf>Social</typeOf>
-            </type>
-        </preferences>
-        <preferences>
-            <description>Drinking tea with friends</description>
-            <idActivity>653</idActivity>
-            <name>Afternoon_tea</name>
-            <place>Bar Centrale</place>
-            <startdate>2017-11-30T17:50:00.0</startdate>
-            <type>
-                <typeOf>Cultural</typeOf>
-            </type>
-        </preferences>
-    </person>
-    <person>
-        <birthdate>0000-01-10</birthdate>
-        <firstname>Gennaro</firstname>
-        <idPerson>707</idPerson>
-        <lastname>Legendary Super Sayan</lastname>
-        <preferences>
-            <description>killing Kakarrot as soon as possible</description>
-            <idActivity>652</idActivity>
-            <name>killing Kakarrot</name>
-            <place>Universe 18</place>
-            <startdate>0000-00-00T00:00:00.0</startdate>
-            <type>
-                <typeOf>Social</typeOf>
-            </type>
-        </preferences>
-        <preferences>
-            <description>Drinking tea with friends</description>
-            <idActivity>653</idActivity>
-            <name>Afternoon_tea</name>
-            <place>Bar Centrale</place>
-            <startdate>2017-11-30T17:50:00.0</startdate>
-            <type>
-                <typeOf>Cultural</typeOf>
-            </type>
-        </preferences>
-    </person>
-    <person>
-        <birthdate>0000-01-10</birthdate>
-        <firstname>Gennaro</firstname>
-        <idPerson>710</idPerson>
-        <lastname>Legendary Super Sayan</lastname>
-        <preferences>
-            <description>killing Kakarrot as soon as possible</description>
-            <idActivity>652</idActivity>
-            <name>killing Kakarrot</name>
-            <place>Universe 18</place>
-            <startdate>0000-00-00T00:00:00.0</startdate>
-            <type>
-                <typeOf>Social</typeOf>
-            </type>
-        </preferences>
-        <preferences>
-            <description>Drinking tea with friends</description>
-            <idActivity>653</idActivity>
-            <name>Afternoon_tea</name>
-            <place>Bar Centrale</place>
-            <startdate>2017-11-30T17:50:00.0</startdate>
-            <type>
-                <typeOf>Cultural</typeOf>
-            </type>
-        </preferences>
-    </person>
-    <person>
-        <birthdate>0000-01-10</birthdate>
-        <firstname>Gianmarco</firstname>
-        <idPerson>713</idPerson>
-        <lastname>Legendary Super Sayan</lastname>
-        <preferences>
-            <description>killing Kakarrot as soon as possible</description>
-            <idActivity>652</idActivity>
-            <name>killing Kakarrot</name>
-            <place>Universe 18</place>
-            <startdate>0000-00-00T00:00:00.0</startdate>
-            <type>
-                <typeOf>Social</typeOf>
-            </type>
-        </preferences>
-        <preferences>
-            <description>Drinking tea with friends</description>
-            <idActivity>653</idActivity>
-            <name>Afternoon_tea</name>
-            <place>Bar Centrale</place>
-            <startdate>2017-11-30T17:50:00.0</startdate>
-            <type>
-                <typeOf>Cultural</typeOf>
-            </type>
-        </preferences>
-    </person>
-    <person>
-        <birthdate>0000-01-10</birthdate>
-        <firstname>Gianmarco</firstname>
-        <idPerson>716</idPerson>
-        <lastname>Legendary Super Sayan</lastname>
-        <preferences>
-            <description>killing Kakarrot as soon as possible</description>
-            <idActivity>652</idActivity>
-            <name>killing Kakarrot</name>
-            <place>Universe 18</place>
-            <startdate>0000-00-00T00:00:00.0</startdate>
-            <type>
-                <typeOf>Social</typeOf>
-            </type>
-        </preferences>
-        <preferences>
-            <description>Drinking tea with friends</description>
-            <idActivity>653</idActivity>
-            <name>Afternoon_tea</name>
-            <place>Bar Centrale</place>
-            <startdate>2017-11-30T17:50:00.0</startdate>
-            <type>
-                <typeOf>Cultural</typeOf>
-            </type>
-        </preferences>
-    </person>
-    <person>
-        <birthdate>0000-01-10</birthdate>
-        <firstname>Gianmarco</firstname>
-        <idPerson>719</idPerson>
-        <lastname>Legendary Super Sayan</lastname>
-        <preferences>
-            <description>killing Kakarrot as soon as possible</description>
-            <idActivity>652</idActivity>
-            <name>killing Kakarrot</name>
-            <place>Universe 18</place>
-            <startdate>0000-00-00T00:00:00.0</startdate>
-            <type>
-                <typeOf>Social</typeOf>
-            </type>
-        </preferences>
-        <preferences>
-            <description>Drinking tea with friends</description>
-            <idActivity>653</idActivity>
-            <name>Afternoon_tea</name>
-            <place>Bar Centrale</place>
-            <startdate>2017-11-30T17:50:00.0</startdate>
-            <type>
-                <typeOf>Cultural</typeOf>
-            </type>
-        </preferences>
-    </person>
-    <person>
-        <birthdate>0000-01-10</birthdate>
-        <firstname>Gianmarco</firstname>
-        <idPerson>722</idPerson>
-        <lastname>Legendary Super Sayan</lastname>
-        <preferences>
-            <description>killing Kakarrot as soon as possible</description>
-            <idActivity>652</idActivity>
-            <name>killing Kakarrot</name>
-            <place>Universe 18</place>
-            <startdate>0000-00-00T00:00:00.0</startdate>
-            <type>
-                <typeOf>Social</typeOf>
-            </type>
-        </preferences>
-        <preferences>
-            <description>Drinking tea with friends</description>
-            <idActivity>653</idActivity>
-            <name>Afternoon_tea</name>
-            <place>Bar Centrale</place>
-            <startdate>2017-11-30T17:50:00.0</startdate>
-            <type>
-                <typeOf>Cultural</typeOf>
-            </type>
-        </preferences>
-    </person>
-    <person>
-        <birthdate>0000-01-10</birthdate>
-        <firstname>Gianmarco</firstname>
-        <idPerson>725</idPerson>
-        <lastname>Legendary Super Sayan</lastname>
-        <preferences>
-            <description>killing Kakarrot as soon as possible</description>
-            <idActivity>652</idActivity>
-            <name>killing Kakarrot</name>
-            <place>Universe 18</place>
-            <startdate>0000-00-00T00:00:00.0</startdate>
-            <type>
-                <typeOf>Social</typeOf>
-            </type>
-        </preferences>
-        <preferences>
-            <description>Drinking tea with friends</description>
-            <idActivity>653</idActivity>
-            <name>Afternoon_tea</name>
-            <place>Bar Centrale</place>
-            <startdate>2017-11-30T17:50:00.0</startdate>
-            <type>
-                <typeOf>Cultural</typeOf>
-            </type>
-        </preferences>
-    </person>
-    <person>
-        <birthdate>0000-01-10</birthdate>
-        <firstname>Gianmarco</firstname>
-        <idPerson>728</idPerson>
-        <lastname>Legendary Super Sayan</lastname>
-        <preferences>
-            <description>killing Kakarrot as soon as possible</description>
-            <idActivity>652</idActivity>
-            <name>killing Kakarrot</name>
-            <place>Universe 18</place>
-            <startdate>0000-00-00T00:00:00.0</startdate>
-            <type>
-                <typeOf>Social</typeOf>
-            </type>
-        </preferences>
-        <preferences>
-            <description>Drinking tea with friends</description>
-            <idActivity>653</idActivity>
-            <name>Afternoon_tea</name>
-            <place>Bar Centrale</place>
-            <startdate>2017-11-30T17:50:00.0</startdate>
-            <type>
-                <typeOf>Cultural</typeOf>
-            </type>
-        </preferences>
-    </person>
-    <person>
-        <birthdate>0000-01-10</birthdate>
-        <firstname>Gianmarco</firstname>
-        <idPerson>731</idPerson>
-        <lastname>Legendary Super Sayan</lastname>
-        <preferences>
-            <description>killing Kakarrot as soon as possible</description>
-            <idActivity>652</idActivity>
-            <name>killing Kakarrot</name>
-            <place>Universe 18</place>
-            <startdate>0000-00-00T00:00:00.0</startdate>
-            <type>
-                <typeOf>Social</typeOf>
-            </type>
-        </preferences>
-        <preferences>
-            <description>Drinking tea with friends</description>
-            <idActivity>653</idActivity>
-            <name>Afternoon_tea</name>
-            <place>Bar Centrale</place>
-            <startdate>2017-11-30T17:50:00.0</startdate>
-            <type>
-                <typeOf>Cultural</typeOf>
-            </type>
-        </preferences>
-    </person>
-    <person>
-        <birthdate>0000-01-10</birthdate>
-        <firstname>Gianmarco</firstname>
-        <idPerson>734</idPerson>
-        <lastname>Legendary Super Sayan</lastname>
-        <preferences>
-            <description>killing Kakarrot as soon as possible</description>
-            <idActivity>652</idActivity>
-            <name>killing Kakarrot</name>
-            <place>Universe 18</place>
-            <startdate>0000-00-00T00:00:00.0</startdate>
-            <type>
-                <typeOf>Social</typeOf>
-            </type>
-        </preferences>
-        <preferences>
-            <description>Drinking tea with friends</description>
-            <idActivity>653</idActivity>
-            <name>Afternoon_tea</name>
-            <place>Bar Centrale</place>
-            <startdate>2017-11-30T17:50:00.0</startdate>
-            <type>
-                <typeOf>Cultural</typeOf>
-            </type>
-        </preferences>
-    </person>
-    <person>
-        <birthdate>0000-01-10</birthdate>
-        <firstname>Gianmarco</firstname>
-        <idPerson>737</idPerson>
-        <lastname>Legendary Super Sayan</lastname>
-        <preferences>
-            <description>killing Kakarrot as soon as possible</description>
-            <idActivity>652</idActivity>
-            <name>killing Kakarrot</name>
-            <place>Universe 18</place>
-            <startdate>0000-00-00T00:00:00.0</startdate>
-            <type>
-                <typeOf>Social</typeOf>
-            </type>
-        </preferences>
-        <preferences>
-            <description>Drinking tea with friends</description>
-            <idActivity>653</idActivity>
-            <name>Afternoon_tea</name>
-            <place>Bar Centrale</place>
-            <startdate>2017-11-30T17:50:00.0</startdate>
-            <type>
-                <typeOf>Cultural</typeOf>
-            </type>
-        </preferences>
-    </person>
-    <person>
-        <birthdate>0000-01-10</birthdate>
-        <firstname>Gianmarco</firstname>
-        <idPerson>740</idPerson>
-        <lastname>Legendary Super Sayan</lastname>
-        <preferences>
-            <description>killing Kakarrot as soon as possible</description>
-            <idActivity>652</idActivity>
-            <name>killing Kakarrot</name>
-            <place>Universe 18</place>
-            <startdate>0000-00-00T00:00:00.0</startdate>
-            <type>
-                <typeOf>Social</typeOf>
-            </type>
-        </preferences>
-        <preferences>
-            <description>Drinking tea with friends</description>
-            <idActivity>653</idActivity>
-            <name>Afternoon_tea</name>
-            <place>Bar Centrale</place>
-            <startdate>2017-11-30T17:50:00.0</startdate>
-            <type>
-                <typeOf>Cultural</typeOf>
-            </type>
-        </preferences>
-    </person>
-    <person>
-        <birthdate>0000-01-10</birthdate>
-        <firstname>Gianmarco</firstname>
-        <idPerson>743</idPerson>
-        <lastname>Legendary Super Sayan</lastname>
-        <preferences>
-            <description>killing Kakarrot as soon as possible</description>
-            <idActivity>652</idActivity>
-            <name>killing Kakarrot</name>
-            <place>Universe 18</place>
-            <startdate>0000-00-00T00:00:00.0</startdate>
-            <type>
-                <typeOf>Social</typeOf>
-            </type>
-        </preferences>
-        <preferences>
-            <description>Drinking tea with friends</description>
-            <idActivity>653</idActivity>
-            <name>Afternoon_tea</name>
-            <place>Bar Centrale</place>
-            <startdate>2017-11-30T17:50:00.0</startdate>
-            <type>
-                <typeOf>Cultural</typeOf>
-            </type>
-        </preferences>
-    </person>
-    <person>
-        <birthdate>0000-01-10</birthdate>
-        <firstname>Gianmarco</firstname>
-        <idPerson>746</idPerson>
-        <lastname>Legendary Super Sayan</lastname>
-        <preferences>
-            <description>killing Kakarrot as soon as possible</description>
-            <idActivity>652</idActivity>
-            <name>killing Kakarrot</name>
-            <place>Universe 18</place>
-            <startdate>0000-00-00T00:00:00.0</startdate>
-            <type>
-                <typeOf>Social</typeOf>
-            </type>
-        </preferences>
-        <preferences>
-            <description>Drinking tea with friends</description>
-            <idActivity>653</idActivity>
-            <name>Afternoon_tea</name>
-            <place>Bar Centrale</place>
-            <startdate>2017-11-30T17:50:00.0</startdate>
-            <type>
-                <typeOf>Cultural</typeOf>
-            </type>
-        </preferences>
-    </person>
-    <person>
-        <birthdate>0000-01-10</birthdate>
-        <firstname>Gianmarco</firstname>
-        <idPerson>749</idPerson>
-        <lastname>Legendary Super Sayan</lastname>
-        <preferences>
-            <description>killing Kakarrot as soon as possible</description>
-            <idActivity>652</idActivity>
-            <name>killing Kakarrot</name>
-            <place>Universe 18</place>
-            <startdate>0000-00-00T00:00:00.0</startdate>
-            <type>
-                <typeOf>Social</typeOf>
-            </type>
-        </preferences>
-        <preferences>
-            <description>Drinking tea with friends</description>
-            <idActivity>653</idActivity>
-            <name>Afternoon_tea</name>
-            <place>Bar Centrale</place>
-            <startdate>2017-11-30T17:50:00.0</startdate>
-            <type>
-                <typeOf>Cultural</typeOf>
-            </type>
-        </preferences>
-    </person>
-    <person>
-        <birthdate>0000-01-10</birthdate>
-        <firstname>Gennaro</firstname>
-        <idPerson>752</idPerson>
-        <lastname>Legendary Super Sayan</lastname>
-        <preferences>
-            <description>killing Kakarrot as soon as possible</description>
-            <idActivity>652</idActivity>
-            <name>killing Kakarrot</name>
-            <place>Universe 18</place>
-            <startdate>0000-00-00T00:00:00.0</startdate>
-            <type>
-                <typeOf>Social</typeOf>
-            </type>
-        </preferences>
-        <preferences>
-            <description>Drinking tea with friends</description>
-            <idActivity>653</idActivity>
-            <name>Afternoon_tea</name>
-            <place>Bar Centrale</place>
-            <startdate>2017-11-30T17:50:00.0</startdate>
-            <type>
-                <typeOf>Cultural</typeOf>
-            </type>
-        </preferences>
-    </person>
-    <person>
-        <birthdate>0000-01-10</birthdate>
-        <firstname>Gennaro</firstname>
-        <idPerson>755</idPerson>
-        <lastname>Legendary Super Sayan</lastname>
-        <preferences>
-            <description>killing Kakarrot as soon as possible</description>
-            <idActivity>652</idActivity>
-            <name>killing Kakarrot</name>
-            <place>Universe 18</place>
-            <startdate>0000-00-00T00:00:00.0</startdate>
-            <type>
-                <typeOf>Social</typeOf>
-            </type>
-        </preferences>
-        <preferences>
-            <description>Drinking tea with friends</description>
-            <idActivity>653</idActivity>
-            <name>Afternoon_tea</name>
-            <place>Bar Centrale</place>
-            <startdate>2017-11-30T17:50:00.0</startdate>
-            <type>
-                <typeOf>Cultural</typeOf>
-            </type>
-        </preferences>
-    </person>
-    <person>
-        <birthdate>0000-01-10</birthdate>
-        <firstname>Gennaro</firstname>
-        <idPerson>758</idPerson>
-        <lastname>Legendary Super Sayan</lastname>
-        <preferences>
-            <description>killing Kakarrot as soon as possible</description>
-            <idActivity>652</idActivity>
-            <name>killing Kakarrot</name>
-            <place>Universe 18</place>
-            <startdate>0000-00-00T00:00:00.0</startdate>
-            <type>
-                <typeOf>Social</typeOf>
-            </type>
-        </preferences>
-        <preferences>
-            <description>Drinking tea with friends</description>
-            <idActivity>653</idActivity>
-            <name>Afternoon_tea</name>
-            <place>Bar Centrale</place>
-            <startdate>2017-11-30T17:50:00.0</startdate>
-            <type>
-                <typeOf>Cultural</typeOf>
-            </type>
-        </preferences>
-    </person>
-    <person>
-        <birthdate>0000-01-10</birthdate>
-        <firstname>Gennaro</firstname>
-        <idPerson>761</idPerson>
-        <lastname>Legendary Super Sayan</lastname>
-        <preferences>
-            <description>killing Kakarrot as soon as possible</description>
-            <idActivity>652</idActivity>
-            <name>killing Kakarrot</name>
-            <place>Universe 18</place>
-            <startdate>0000-00-00T00:00:00.0</startdate>
-            <type>
-                <typeOf>Social</typeOf>
-            </type>
-        </preferences>
-        <preferences>
-            <description>Drinking tea with friends</description>
-            <idActivity>653</idActivity>
-            <name>Afternoon_tea</name>
-            <place>Bar Centrale</place>
-            <startdate>2017-11-30T17:50:00.0</startdate>
-            <type>
-                <typeOf>Cultural</typeOf>
-            </type>
-        </preferences>
-    </person>
-    <person>
-        <birthdate>0000-01-10</birthdate>
-        <firstname>Gianmarco</firstname>
-        <idPerson>764</idPerson>
-        <lastname>Legendary Super Sayan</lastname>
-        <preferences>
-            <description>killing Kakarrot as soon as possible</description>
-            <idActivity>652</idActivity>
-            <name>killing Kakarrot</name>
-            <place>Universe 18</place>
-            <startdate>0000-00-00T00:00:00.0</startdate>
-            <type>
-                <typeOf>Social</typeOf>
-            </type>
-        </preferences>
-        <preferences>
-            <description>Drinking tea with friends</description>
-            <idActivity>653</idActivity>
-            <name>Afternoon_tea</name>
-            <place>Bar Centrale</place>
-            <startdate>2017-11-30T17:50:00.0</startdate>
-            <type>
-                <typeOf>Cultural</typeOf>
-            </type>
-        </preferences>
-    </person>
 </people>
 
 
@@ -772,11 +200,11 @@ POST /person/ Accept: APPLICATION/XML Content-Type: APPLICATION/XML
 <person>
     <birthdate>2017-11-11</birthdate>
     <firstname>Sherlock</firstname>
-    <idPerson>768</idPerson>
+    <idPerson>702</idPerson>
     <lastname>Holmes</lastname>
     <preferences>
         <description>Going to a restaurant or a bar with friends.</description>
-        <idActivity>769</idActivity>
+        <idActivity>703</idActivity>
         <name>Going out</name>
         <place>London</place>
         <startdate>2017-11-11T00:00:00+01:00</startdate>
@@ -789,7 +217,7 @@ POST /person/ Accept: APPLICATION/XML Content-Type: APPLICATION/XML
 
 Request #5:
 Header: 
-DELETE /person/768 Accept: APPLICATION/XML
+DELETE /person/702 Accept: APPLICATION/XML
 => Result: ERROR
 => HTTP Status: 500 Internal Server Error
 
@@ -801,7 +229,28 @@ GET /activity_type/ Accept: APPLICATION/XML Content-Type: APPLICATION/XML
 <?xml version="1.0" encoding="UTF-16"?>
 <activityTypes>
     <activity_type>Cultural</activity_type>
+    <activity_type>Sport</activity_type>
 </activityTypes>
+
+
+Request #7a:
+Header: 
+GET /person/651/Cultural Accept: APPLICATION/XML
+=> Result: OK
+=> HTTP Status: 200 OK
+<?xml version="1.0" encoding="UTF-16"?>
+<activities>
+    <activity>
+        <description>Drinking tea with friends</description>
+        <idActivity>653</idActivity>
+        <name>Afternoon_tea</name>
+        <place>Bar Centrale</place>
+        <startdate>2017-11-30T17:50:00.0</startdate>
+        <type>
+            <typeOf>Cultural</typeOf>
+        </type>
+    </activity>
+</activities>
 
 
 Request #7a:
@@ -832,11 +281,31 @@ GET /person/651/Cultural Accept: APPLICATION/XML
 <?xml version="1.0" encoding="UTF-16"?>
 <activities>
     <activity>
-        <description>Drinking tea with friends</description>
-        <idActivity>653</idActivity>
-        <name>Afternoon_tea</name>
-        <place>Bar Centrale</place>
-        <startdate>2017-11-30T17:50:00.0</startdate>
+        <description>Sleeping in the bed</description>
+        <idActivity>663</idActivity>
+        <name>Slepping</name>
+        <place>Own bed</place>
+        <startdate>2017-12-07T21:50:00.0</startdate>
+        <type>
+            <typeOf>Cultural</typeOf>
+        </type>
+    </activity>
+</activities>
+
+
+Request #7b:
+Header: 
+GET /person/651/Cultural Accept: APPLICATION/XML
+=> Result: OK
+=> HTTP Status: 200 OK
+<?xml version="1.0" encoding="UTF-16"?>
+<activities>
+    <activity>
+        <description>Sleeping in the bed</description>
+        <idActivity>663</idActivity>
+        <name>Slepping</name>
+        <place>Own bed</place>
+        <startdate>2017-12-07T21:50:00.0</startdate>
         <type>
             <typeOf>Cultural</typeOf>
         </type>
