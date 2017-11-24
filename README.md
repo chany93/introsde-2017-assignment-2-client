@@ -42,7 +42,6 @@ To run the clients execute this command from terminal (inside the project's dire
 it will run the program and it will create the __client-server-json.log__ and the __client-server-xml.log__ inside the root directory
 
 ## 4. Additional Notes
-Step#3.9 is not implemented step#3.10 is left as comment because works the first time then if executed again cause an error due to mishandling the response. step#3.11 is left as comment, because mishandling of the response.
-
+Step#3.9 is not implemented.
 
 
