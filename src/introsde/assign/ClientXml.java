@@ -301,7 +301,7 @@ public class ClientXml {
     
     String newType = "";
     if (type.equals("Social")) {
-    		newType = "Sport";
+    		newType = "Cultural";
     }else {
     		newType = "Social";   	
     }
@@ -329,7 +329,12 @@ public class ClientXml {
     		+ "=> Result: " + result +  "\n"
     		+ "=> HTTP Status: " + respPut.getStatus() + " " + respPut.getStatusInfo() + "\n"
     		+ "Body: \n";
-
+		
+    if (newType.equals("Social")) {
+	type = "Social";
+    } else {
+    	type = "Cultural";
+    }
 
  
     // Step 3.11. EXTRA
