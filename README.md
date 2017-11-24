@@ -44,5 +44,6 @@ it will run the program and it will create the __client-server-json.log__ and th
 ## 4. Additional Notes
 Step#3.9 is not implemented.
 the log have different number of people due to the fact that when the client sends a put request of step#3.3 it also creates a new person.
+There may be some issues with the activity types. Sometimes (after running it a couple of times) it does not find any so, the requests regarding activity type give error. 
 
 
